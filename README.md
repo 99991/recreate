@@ -6,7 +6,7 @@ Useful for reproducible data science projects where authors somehow never have t
 # Installation
 
 ```
-pip install git+https://github.com/99991/recreate.git
+pip install recreate
 ```
 
 # Usage
