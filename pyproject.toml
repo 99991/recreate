@@ -12,5 +12,8 @@ dependencies = [
     "tqdm"
 ]
 
+[project.urls]
+Homepage = "https://github.com/99991/recreate"
+
 [project.scripts]
 recreate = "recreate:main"
