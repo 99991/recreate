@@ -1,0 +1,16 @@
+[project]
+name = "recreate"
+version = "0.1.0"
+description = "A tool to index files and recreate directory structures with symlinks."
+authors = [
+    { name = "Thomas Germer", email = "Thomas.Germer@hhu.de" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "tqdm"
+]
+
+[project.scripts]
+recreate = "recreate:main"
