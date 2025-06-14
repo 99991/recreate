@@ -2,10 +2,12 @@
 mkdir -p data/subdir/
 
 echo "Hello, World!" > data/hello.txt
+cp data/hello.txt data/subdir/hello.txt
 echo "quack" > data/subdir/duck.txt
+touch data/subdir/empty.txt
 
 # Remember checksums
-sha256sum data/hello.txt data/subdir/duck.txt > checksums.txt
+sha256sum data/hello.txt data/subdir/hello.txt data/subdir/duck.txt data/subdir/empty.txt > checksums.txt
 
 # Compute index of data directory
 recreate --index index.json data

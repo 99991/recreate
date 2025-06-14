@@ -1,6 +1,6 @@
 [project]
 name = "recreate"
-version = "0.1.0"
+version = "0.2.0"
 description = "A tool to index files and recreate directory structures with symlinks."
 authors = [
     { name = "Thomas Germer", email = "Thomas.Germer@hhu.de" }

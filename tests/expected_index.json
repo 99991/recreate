@@ -1,5 +1,22 @@
 {
-    "data/subdir": "",
-    "data/hello.txt": "c98c24b677eff44860afea6f493bbaec5bb1c4cbb209c6fc2bbb47f66ff2ad31",
-    "data/subdir/duck.txt": "e9ee09affbcd25b65363094efc085ffec0de1c3134cdca9c7fb2ded7514ac71a"
+    "data/hello.txt": {
+        "sha256": "c98c24b677eff44860afea6f493bbaec5bb1c4cbb209c6fc2bbb47f66ff2ad31",
+        "size": 14
+    },
+    "data/subdir/hello.txt": {
+        "sha256": "c98c24b677eff44860afea6f493bbaec5bb1c4cbb209c6fc2bbb47f66ff2ad31",
+        "size": 14
+    },
+    "data/subdir": {
+        "sha256": "",
+        "size": 0
+    },
+    "data/subdir/duck.txt": {
+        "sha256": "e9ee09affbcd25b65363094efc085ffec0de1c3134cdca9c7fb2ded7514ac71a",
+        "size": 6
+    },
+    "data/subdir/empty.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+    }
 }
