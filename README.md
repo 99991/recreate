@@ -1,5 +1,9 @@
 # recreate
 
+[![PyPI version](https://img.shields.io/pypi/v/recreate)](https://pypi.org/project/recreate/)
+[![License: MIT](https://img.shields.io/github/license/99991/recreate?color=brightgreen)](https://opensource.org/licenses/MIT)
+![PyPI downloads](https://img.shields.io/pypi/dm/recreate)
+
 `recreate` is a tool to automatically recreate a directory from an index by symlinking to files found elsewhere on your system.
 
 ![Motivating image](https://github.com/user-attachments/assets/1688cff9-b887-4925-b1d5-84a2d05a552e)
