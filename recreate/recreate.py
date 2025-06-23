@@ -61,7 +61,7 @@ def index_files(index: dict[str, Any], directory: Path, exclude_hidden: bool = T
             hash = ""
             size = 0
 
-        return (str(path), hash, size)
+        return (path.as_posix(), hash, size)
 
     with ThreadPool() as pool:
         for path, hash, size in tqdm.tqdm(pool.imap_unordered(hash_path, paths), total=len(paths), desc=f"Indexing {directory.name}", unit="file"):
@@ -151,7 +151,7 @@ def _recreate(index_path: Path, src_dirs: list[Path], dst_directory: Path, overw
             if src_path.is_dir():
                 continue
 
-            src_file = FileInfo(str(src_path), src_path.name, src_path.stat().st_size, "")
+            src_file = FileInfo(src_path.as_posix(), src_path.name, src_path.stat().st_size, "")
 
             # Enqueue source files with matching dst names first
             if src_path.name in dst_names:
