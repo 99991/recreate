@@ -22,13 +22,13 @@ Assuming that your repository has the following structure:
 
 ```
 your-repository/  <------ run recreate in this directory
-└── data
+└── data/
     ├── image-0001.jpg
     ├── image-0002.jpg
     ...
 ```
 
-First, navigate to your repository's directory. Then, run `recreate` to create `index.json` from files found in `data/`.
+First, navigate to your repository's directory. Then, run `recreate` to create `index.json` from files found in `data/`. The `data/` directory should be somewhere in your repository.
 
 ```bash
 recreate --index index.json data/
@@ -36,19 +36,19 @@ recreate --index index.json data/
 
 # Using the index
 
-Recreate the file structure defined in `index.json` by linking files found anywhere in `source/`.
+Recreate the `data/` directory defined in `index.json` by linking files found anywhere in `source/`. The `source/` directory can be anywhere on your system.
 
 ```bash
 recreate --recreate index.json source/
 ```
 
-You can also specify multiple source directories. This is a common use case for deep learning projects, where multiple datasets (e.g. train/validation/test) may have to be placed at the correct location. The `recreate` tool makes this easy. You only have to point it to the datasets and it will link the files to the appropriate location.
+You can also specify multiple source directories. This is a common use case for deep learning projects, where multiple datasets (e.g. train/validation/test) may have to be combined at a single location. The `recreate` tool makes this easy. You only have to point it to the datasets and it will link the files to the appropriate location.
 
 ```bash
 recreate --recreate index.json dataset1/ dataset2/ dataset3/ # and so on...
 ```
 
-Or let `recreate` search through the current directory.
+Or let `recreate` search through the current directory and it will automatically find any file that matches.
 
 ```bash
 recreate --recreate index.json .
