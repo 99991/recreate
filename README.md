@@ -18,7 +18,17 @@ pip install recreate
 
 # Creating the index
 
-Create `index.json` from files found in `data/`.
+Assuming that your repository has the following structure:
+
+```
+your-repository/  <------ run recreate in this directory
+└── data
+    ├── image-0001.jpg
+    ├── image-0002.jpg
+    ...
+```
+
+First, navigate to your repository's directory. Then, run `recreate` to create `index.json` from files found in `data/`.
 
 ```bash
 recreate --index index.json data/
