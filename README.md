@@ -18,7 +18,7 @@ pip install recreate
 
 # Creating the index
 
-Create `index.json` from files found in in `data/`.
+Create `index.json` from files found in `data/`.
 
 ```bash
 recreate --index index.json data/
